@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="editorapp" class="flex flex-col my-5 mx-auto p-3 w-4/5">
+<!--div id="editorapp" class="py-2 max-w-full w-full mx-auto
+                flex flex-wrap flex-col
+                content-center items-center justify-center"-->
+</div>
+
+<!--script src="/static/dropzone.min.js"></script-->
+<!--script src="/static/dropzone.min.js"></script-->
+{% endblock content %}
+{% block bottom_scripts %}
+{{ super() }}
+<script type="module" src="http://localhost:3000/blog/editor.js"></script>
+{% endblock bottom_scripts %}
